@@ -147,6 +147,13 @@
     width: 2.4rem;
     height: 2.4rem;
   }
+  .sub-menu-wrap {
+    right: 0;
+    width: 100%;
+  }
+  .sub-menu {
+    margin: 0 6.4rem 0 6.4rem;
+  }
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -231,5 +238,22 @@
   .social-icon {
     width: 2rem;
     height: 2rem;
+  }
+
+  .sub-menu {
+    margin: 0;
+  }
+  
+  .sub-menu-link {
+    font-size: 1rem;
+  }
+
+  .sub-menu-link ion-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .sub-menu-link span {
+    font-size: 1rem;
   }
 }
