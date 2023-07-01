@@ -78,7 +78,7 @@
 @media (max-width: 44em) {
   .header {
     display: flex;
-    padding: 1.2rem 0 0 0;
+    padding: 2.4rem 0 0 0;
     align-items: center;
     justify-content: center;
     gap: 15.2rem;
@@ -154,6 +154,8 @@
   .sub-menu {
     margin: 0 6.4rem 0 6.4rem;
   }
+
+  
 }
 /**************************/
 /* BELOW 544px (Phones) */
@@ -181,6 +183,10 @@
     height: 11rem;
   }
 
+  .sticky .header {
+    height: 11rem;
+  }
+
   .header-logo {
     width: 100%;
     height: 10rem;
@@ -204,6 +210,7 @@
   .card {
     width: 100%;
     text-align: center;
+    height: 40rem;
   }
 
   .card-title {
@@ -243,9 +250,10 @@
   .sub-menu {
     margin: 0;
   }
-  
+
   .sub-menu-link {
     font-size: 1rem;
+    margin: 1.2rem 0 1.6rem 0;
   }
 
   .sub-menu-link ion-icon {
@@ -255,5 +263,10 @@
 
   .sub-menu-link span {
     font-size: 1rem;
+  }
+
+  .main-section::before {
+    width: 100%;
+    height: 90%;
   }
 }
