@@ -15,7 +15,7 @@
 
 :root {
   --main-color: white;
-  --box-shadow: rgba(0, 0, 0, 0.07);
+  --box-shadow: #ddd;
   --filter-brightness: brightness(0);
   --main-links: #22292b;
   --sticky-color: rgba(255, 255, 255, 0.97);
@@ -25,6 +25,7 @@
   --btn-hover: #080f11;
   --footer-color: #f8f8fc;
   --footer-content: #767676;
+  --header-hover: #fafafa;
 }
 
 .dark-theme {
@@ -32,7 +33,7 @@
   --box-shadow: rgba(255, 255, 255, 0.05);
   --filter-brightness: brightness(100);
   --main-links: #cccccc;
-  --sticky-color: #000106;
+  --sticky-color: rgba(0, 0, 0, 0.92);
   --sticky-box-shadow: rgba(255, 255, 255, 0.03);
   --main-section-before: #000106;
   --box-section-color: #1a1a1f;
@@ -40,6 +41,7 @@
   --btn-hover: #b3b3b3;
   --footer-color: #000106;
   --footer-content: #cccccc;
+  --header-hover: #1a1a1f;
 }
 
 html {
@@ -60,8 +62,10 @@ body {
 .container {
   /* 1140px */
   max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid {

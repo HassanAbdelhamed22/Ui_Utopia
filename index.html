@@ -34,65 +34,63 @@
     <title>UI Utopia</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <a href="#"
-          ><img class="header-logo" src="img/logo_transparent.png" alt="logo"
-        /></a>
-      </div>
-      <nav>
-        <div class="main-nav">
-          <ul class="main-nav-list">
-            <li><a href="#">Home</a></li>
-            <li class="tools-nav">
-              <a href="#" id="toolsLink"
-                >Tools
-                <ion-icon name="chevron-down-outline"></ion-icon>
-              </a>
-            </li>
-            <li><a href="#">Contact Us</a></li>
-            <li>
-              <a><img id="icon" src="img/moon.png" alt="" /></a>
-            </li>
-          </ul>
-
-          <div class="sub-menu-wrap" id="subMenu">
-            <div class="sub-menu grid grid--2-cols">
-              <a class="sub-menu-link" href="#">
-                <ion-icon name="image-outline"></ion-icon>
-                <p>Images</p>
-                <span>></span>
-              </a>
-              <a class="sub-menu-link" href="#">
-                <ion-icon name="create-outline"></ion-icon>
-                <p>Edit Images</p>
-                <span>></span>
-              </a>
-              <a href="#" class="sub-menu-link">
-                <ion-icon name="color-palette-outline"></ion-icon>
-                <p>Colors</p>
-                <span>></span>
-              </a>
-              <a class="sub-menu-link" href="#">
-                <ion-icon name="flag-outline"></ion-icon>
-                <p>Icons</p>
-                <span>></span>
-              </a>
-              <a class="sub-menu-link" href="#">
-                <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
-                <p>Elements & Components</p>
-                <span>></span>
-              </a>
-              <a class="sub-menu-link" href="#">
-                <ion-icon name="tv-outline"></ion-icon>
-                <p>Css Animations</p>
-                <span>></span>
-              </a>
-            </div>
+    <div class="header">
+      <div class="container">
+        <a href="#" class="logo">UI Utopia</a>
+        <ul class="main-nav">
+          <li><a href="#">Home</a></li>
+          <li class="tools-nav">
+            <a href="#" id="toolsLink"
+              >Tools
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li>
+            <a><img id="icon" src="img/moon.png" alt="" /></a>
+          </li>
+        </ul>
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu grid grid--2-cols">
+            <a class="sub-menu-link" href="#imgs">
+              <ion-icon name="image-outline"></ion-icon>
+              <p>Images</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link" href="#edit">
+              <ion-icon name="create-outline"></ion-icon>
+              <p>Edit Images</p>
+              <span>></span>
+            </a>
+            <a href="#color" class="sub-menu-link">
+              <ion-icon name="color-palette-outline"></ion-icon>
+              <p>Colors</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link" href="#Templates">
+              <ion-icon name="earth-outline"></ion-icon>
+              <p>Templates</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link" href="#icons">
+              <ion-icon name="flag-outline"></ion-icon>
+              <p>Icons</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link" href="#ele&com">
+              <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+              <p>Elements & Components</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link" href="#css">
+              <ion-icon name="tv-outline"></ion-icon>
+              <p>Css Animations</p>
+              <span>></span>
+            </a>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </div>
 
     <section class="main-section">
       <div class="main-section1 container grid grid--2-cols">
@@ -109,7 +107,7 @@
       </div>
     </section>
 
-    <section class="boxes-section">
+    <section class="boxes-section" id="imgs">
       <div class="box-section container">
         <div class="img-boxes">
           <h2 class="img-boxes-h2">Images</h2>
@@ -238,7 +236,7 @@
       </div>
     </section>
 
-    <section class="img-editing boxes-section">
+    <section class="img-editing boxes-section" id="edit">
       <div class="box-section container">
         <div class="img-boxes">
           <h2 class="img-boxes-h2">Edit Images</h2>
@@ -310,7 +308,7 @@
       </div>
     </section>
 
-    <section class="color boxes-section">
+    <section class="color boxes-section" id="color">
       <div class="box-section container">
         <div class="img-boxes">
           <h2 class="img-boxes-h2">Colors</h2>
@@ -451,7 +449,135 @@
       </div>
     </section>
 
-    <section class="icons boxes-section">
+    <section class="boxes-section" id="Templates">
+      <div class="box-section container">
+        <div class="img-boxes">
+          <h2 class="img-boxes-h2">Templates</h2>
+
+          <div class="card-box grid grid--3-cols">
+            <div class="card">
+              <img
+                class="card-img1"
+                src="img/temp-img/frontendmentor.png"
+                alt=""
+              />
+              <div class="card-body">
+                <h2 class="card-title">Frontend Mentor</h2>
+                <p class="card-subtitle">
+                  Improve your front-end coding skills by building real projects
+                </p>
+                <p class="card-info">
+                  Solve real-world HTML, CSS and JavaScript challenges whilst
+                  working to professional designs.
+                </p>
+                <a href="https://www.frontendmentor.io/" target="_blank">
+                  <button class="card-btn">Visit Site</button>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img"
+                src="img/temp-img/pagecollective (1).png"
+                alt=""
+              />
+              <div class="card-body">
+                <h2 class="card-title">page collective</h2>
+                <p class="card-subtitle">Landing page design</p>
+                <p class="card-info">
+                  I've been collecting landing page and general marketing
+                  website design inspiration for years. This website is to
+                  showcase and share those pages.
+                </p>
+                <a
+                  href="https://pagecollective.com/?ref=screenlane"
+                  target="_blank"
+                >
+                  <button class="card-btn">Visit Site</button>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img" src="img/temp-img/screenlane.png" alt="" />
+              <div class="card-body">
+                <h2 class="card-title">screenlane</h2>
+                <p class="card-subtitle">App screen and Landing page design</p>
+                <p class="card-info">
+                  Screenlane is a website and newsletter that features the
+                  latest mobile design inspiration.
+                </p>
+                <a href="https://screenlane.com/" target="_blank">
+                  <button class="card-btn">Visit Site</button>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img1"
+                src="img/temp-img/onepagelove.png"
+                alt=""
+              />
+              <div class="card-body">
+                <h2 class="card-title">One Page Love</h2>
+                <p class="card-subtitle">
+                  One Page website inspiration, templates and resources
+                </p>
+                <p class="card-info">
+                  A collection of 260 One Page website templates. Each template
+                  includes a review, long screenshot, live demo and download
+                  links.
+                </p>
+                <a href="https://onepagelove.com/" target="_blank">
+                  <button class="card-btn">Visit Site</button>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img1"
+                src="img/temp-img/landbook (1).png"
+                alt=""
+              />
+              <div class="card-body">
+                <h2 class="card-title">Land Book</h2>
+                <p class="card-subtitle">websites designs</p>
+                <p class="card-info">
+                  this place for Designers, Developers, Product Owners,
+                  Marketing Managers, Startupers, Freelancers and, really, for
+                  everyone who appreciates fine designs and well-crafted sites.
+                  We want to inspire and support you in the process of creating
+                  your own unique website projects
+                </p>
+                <a href="https://land-book.com/" target="_blank">
+                  <button class="card-btn">Visit Site</button>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img1"
+                src="img/temp-img/Figma-1-logo (1).png"
+                alt=""
+              />
+              <div class="card-body">
+                <h2 class="card-title">UX Crush</h2>
+                <p class="card-subtitle">
+                  Figma Templates, UI kits & Resources
+                </p>
+                <p class="card-info">
+                  THE BIGGEST COLLECTION OF FREE FIGMA RESOURCES.
+                </p>
+                <a href="https://www.uxcrush.com/" target="_blank">
+                  <button class="card-btn">Visit Site</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="icons boxes-section" id="icons">
       <div class="box-section container">
         <div class="img-boxes">
           <h2 class="img-boxes-h2">Icons</h2>
@@ -521,7 +647,7 @@
       </div>
     </section>
 
-    <section class="Elements-Components boxes-section">
+    <section class="Elements-Components boxes-section" id="ele&com">
       <div class="box-section container">
         <div class="img-boxes">
           <h2 class="img-boxes-h2">Elements&Components</h2>
@@ -583,7 +709,7 @@
       </div>
     </section>
 
-    <section class="CSS-animation boxes-section">
+    <section class="CSS-animation boxes-section" id="css">
       <div class="box-section container">
         <div class="img-boxes">
           <h2 class="img-boxes-h2">CSS Animation</h2>
@@ -648,7 +774,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container footer-section">
         <div class="foo">
           <div class="footer-logo">
@@ -660,7 +786,7 @@
             /></a>
           </div>
           <p class="copyright">
-            Copyright &copy; <span class="year">2027</span>.
+            Copyright &copy; <span class="year">2027</span> by Hassan.
           </p>
         </div>
         <div class="social-links">

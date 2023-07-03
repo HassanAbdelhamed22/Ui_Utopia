@@ -1,89 +1,117 @@
 /* header */
 
-* {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+.header {
+  background-color: var(--main-color);
+  position: relative;
+  box-shadow: var(--box-shadow);
+  height: 8rem;
+}
+@media (max-width: 44em) {
+  .header {
+    height: 11rem;
+  }
 }
 
-header {
-  background-color: var(--main-color);
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 1.2rem 1.2rem 0 4.8rem;
-  height: 8rem;
-  box-shadow: 0 1.2rem 3.2rem var(--box-shadow);
+  flex-wrap: wrap;
 }
 
-.header-logo {
-  width: 12rem;
-  height: 12rem;
-  filter: var(--filter-brightness);
-}
-
-/* .main-nav-list {
+.header .logo {
+  color: var(--main-text-h2);
+  font-size: 3.2rem;
+  font-weight: bold;
+  height: 6.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4.8rem;
-  position: relative;
-} */
+}
 
-.main-nav-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+@media (max-width: 44em) {
+  .header .logo {
+    width: 100%;
+    height: 5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.header .main-nav {
+  display: flex;
+}
+
+@media (max-width: 44em) {
+  .header .main-nav {
+    margin: auto;
+  }
+}
+
+.header .main-nav > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  color: var(--main-links);
+  position: relative;
+  overflow: hidden;
+  padding: 0 3.2rem;
+  font-size: 2.4rem;
+  transition: var(--main-transition);
+}
+
+@media (max-width: 44em) {
+  .header .main-nav > li > a {
+    padding: 2rem;
+    font-size: 2rem;
+    height: 5rem;
+  }
+}
+
+.header .main-nav > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: -100%;
+  background-color: var(--main-links);
+  transition: 0.3s;
+}
+
+.header .main-nav > li > a:hover {
+  background-color: var(--header-hover);
+}
+
+.header .main-nav li:last-child a:hover {
+  background-color: var(--main-color);
+}
+
+.header .main-nav > li > a:hover::before {
+  left: 0;
+}
+
+.header .main-nav > li:last-child > a:hover::before {
+  left: -100%;
+}
+
+.tools-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
 
-.main-nav-list li a:link,
-.main-nav-list li a:visited {
-  text-decoration: none;
-  font-size: 2.3rem;
-  color: var(--main-links);
-  margin: 1rem;
-  display: inline-block;
-}
-.main-nav-list li a::after {
-  display: block;
-  content: "";
-  padding-bottom: 1rem;
-  border-bottom: solid 2px var(--main-links);
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
+.tools-nav ion-icon {
+  width: 2.4rem;
+  height: 12rem;
+  display: flex;
 
-.main-nav-list li a:hover::after {
-  transform: scaleX(1);
-}
-
-.main-nav-list li:last-child a:hover::after {
-  border-bottom: none;
-  transform: scaleX(0);
-}
-
-.main-nav-list li:last-child a::after{
-  transform-origin: 0%;
-  border-bottom: none;
-}
-
-.main-nav-list li a:after {
-  transform-origin: 0% 50%;
-}
-
-.tools-nav a {
-  position: relative;
-}
-
-.tools-nav a ion-icon {
-  position: absolute;
-  top: 40%;
-  right: -1.6rem;
-  transform: translate(50%, -50%);
-  margin-left: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-menu-wrap {
@@ -115,11 +143,10 @@ header {
   margin: 1.6rem 0 2.4rem 0;
   font-size: 1.2rem;
   font-weight: 600;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
 }
 
-.sub-menu-link:last-child,
-.sub-menu-link:nth-child(5) {
+.sub-menu-link:last-child {
   border: none;
 }
 
@@ -168,27 +195,35 @@ header {
 #icon {
   width: 3.2rem;
   height: 3.2rem;
-  margin: 0.6rem;
+  /* margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  margin-top: 1rem; */
   cursor: pointer;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* MAIN SECTION */
 
 .main-section {
-  padding: 9.6rem 0 25rem 0;
+  padding: 0rem 0 18rem 0;
   background-color: var(--box-section-color);
+}
+
+.main-section .container {
+  min-height: calc(100vh - 8rem);
 }
 
 .main-section::before {
   content: "";
   position: absolute;
   left: 0;
-  top: -6rem;
+  top: 0rem;
   width: 100%;
   height: 100%;
   background-color: var(--main-section-before);
-  z-index: -2;
+  z-index: -1;
   transform: skewY(-6deg);
   transform-origin: top left;
 }
